@@ -5,7 +5,7 @@ export class Lista {
     id: number;
     titulo: string;
     creadaEn: Date;
-    terminadaEn: Date;
+    completadaEn: Date;
     completada: boolean;
     items: ListaItem[];
 

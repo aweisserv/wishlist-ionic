@@ -29,6 +29,7 @@ export class AgregarPage implements OnInit {
   }
 
   agregarItem() {
+    
     if ( this.nombreItem.length === 0 ) {   // Validación de entrada
       return;
     }
@@ -41,5 +42,28 @@ export class AgregarPage implements OnInit {
 
   }
 
+  cambioCheck( item: ListaItem ) {
+
+    const pendientes = this.lista.items
+                            .filter( itemData => !itemData.completado )
+                            .length;
+
+    if ( pendientes === 0 ){
+      this.lista.completadaEn = new Date();
+      this.lista.completada = true;
+    } else {
+      this.lista.completadaEn = null;
+      this.lista.completada = false;
+    }                            
+
+    this.deseosService.guardarStorage();
+
+  }
+
+  borrar( i: number ) {
+
+    this.lista.items.splice( i, 1 );
+    this.deseosService.guardarStorage();
+  }
 
 }
