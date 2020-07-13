@@ -50,10 +50,10 @@ export class AgregarPage implements OnInit {
 
     if ( pendientes === 0 ){
       this.lista.completadaEn = new Date();
-      this.lista.completada = true;
+      this.lista.terminada = true;
     } else {
       this.lista.completadaEn = null;
-      this.lista.completada = false;
+      this.lista.terminada = false;
     }                            
 
     this.deseosService.guardarStorage();

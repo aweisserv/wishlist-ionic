@@ -6,15 +6,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="fadeIn fast">
 
-  <app-listas> [terminada]="false" </app-listas>
-
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
-    <ion-fab-button
-                  (click)="agregarLista()">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+  <app-listas [terminada]="false"></app-listas> 
 
 </ion-content>
+<img src="assets/icon/to-do.png" width="150" alt="" loading="lazy" style="opacity: 0.3; align-self: center; margin-bottom: 100px;">
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+  <ion-fab-button
+                (click)="agregarLista()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

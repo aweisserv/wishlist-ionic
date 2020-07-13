@@ -6,7 +6,7 @@ export class Lista {
     titulo: string;
     creadaEn: Date;
     completadaEn: Date;
-    completada: boolean;
+    terminada: boolean;
     items: ListaItem[];
 
     constructor( titulo: string ) {
@@ -14,7 +14,7 @@ export class Lista {
         this.titulo = titulo;
 
         this.creadaEn = new Date();
-        this.completada = false;
+        this.terminada = false;
         this.items = [];
 
         this.id = new Date().getTime();
