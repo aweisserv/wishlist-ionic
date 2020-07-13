@@ -13,7 +13,7 @@ Descripción:
   - Editar / Eliminar listas e items
   - Listas con 100% de items completados pasan a pestaña "Completadas"
   
-  ####Capturas:
+  #### Capturas:
  
 
 ![Captura1](https://user-images.githubusercontent.com/19677373/87348856-6d823b00-c523-11ea-8b16-d20bda3cfb75.PNG)
